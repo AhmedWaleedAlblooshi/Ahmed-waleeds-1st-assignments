@@ -1,0 +1,50 @@
+class Payment:
+    """This class represents the payment of the user for the hotel to make his reservation"""
+    
+    def __init__(self, paymentID, paymentMethod, amount, paymentDate, cardNumber):
+        self._paymentID = paymentID
+        self._paymentMethod = paymentMethod
+        self._amount = amount
+        self._paymentDate = paymentDate
+        self._cardNumber = cardNumber
+
+    # Setters and Getters for the attributes above
+    def set_paymentID(self, paymentID):
+        self._paymentID = paymentID
+    
+    def get_paymentID(self):
+        return self._paymentID
+    
+    def set_paymentMethod(self, paymentMethod):
+        self._paymentMethod = paymentMethod
+    
+    def get_paymentMethod(self):
+        return self._paymentMethod
+    
+    def set_amount(self, amount):
+        self._amount = amount
+    
+    def get_amount(self):
+        return self._amount
+    
+    def set_paymentDate(self, paymentDate):
+        self._paymentDate = paymentDate
+    
+    def get_paymentDate(self):
+        return self._paymentDate
+    
+    def set_cardNumber(self, cardNumber):
+        self._cardNumber = cardNumber
+    
+    def get_cardNumber(self):
+        return self._cardNumber
+
+    # Other required function-headers
+    def process_payment(self):
+        """This function should secure and process the payment."""
+        pass
+
+    def refund_payment(self):
+        """This function should handle refunding the payment to the user."""
+        pass
+
