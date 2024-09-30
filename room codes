@@ -1,0 +1,50 @@
+class Room:
+    """This class represents the room type that the user specified"""
+    
+    def __init__(self, roomNumber, roomType, pricePerNight, isAvailable, bedType):
+        self._roomNumber = roomNumber
+        self._roomType = roomType
+        self._pricePerNight = pricePerNight
+        self._isAvailable = isAvailable
+        self._bedType = bedType
+
+    # Setters and Getters for the attributes
+    def set_roomNumber(self, roomNumber):
+        self._roomNumber = roomNumber
+    
+    def get_roomNumber(self):
+        return self._roomNumber
+    
+    def set_roomType(self, roomType):
+        self._roomType = roomType
+    
+    def get_roomType(self):
+        return self._roomType
+    
+    def set_pricePerNight(self, pricePerNight):
+        self._pricePerNight = pricePerNight
+    
+    def get_pricePerNight(self):
+        return self._pricePerNight
+    
+    def set_isAvailable(self, isAvailable):
+        self._isAvailable = isAvailable
+    
+    def get_isAvailable(self):
+        return self._isAvailable
+    
+    def set_bedType(self, bedType):
+        self._bedType = bedType
+    
+    def get_bedType(self):
+        return self._bedType
+
+    # extra required function-headers
+    def book_room(self):
+        """This function should book the room if it is available."""
+        pass
+
+    def cancel_booking(self):
+        """This function should cancel the room booking where it is not available."""
+        pass
+
