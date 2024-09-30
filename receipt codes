@@ -1,0 +1,50 @@
+class Receipt:
+    """This class represents the receipt of the user"""
+
+    def __init__(self, receiptID, reservation, totalAmount, dateIssued, paymentMethod):
+        self._receiptID = receiptID
+        self._reservation = reservation
+        self._totalAmount = totalAmount
+        self._dateIssued = dateIssued
+        self._paymentMethod = paymentMethod
+
+    # Setters and Getters for the attributes
+    def set_receiptID(self, receiptID):
+        self._receiptID = receiptID
+    
+    def get_receiptID(self):
+        return self._receiptID
+    
+    def set_reservation(self, reservation):
+        self._reservation = reservation
+    
+    def get_reservation(self):
+        return self._reservation
+    
+    def set_totalAmount(self, totalAmount):
+        self._totalAmount = totalAmount
+    
+    def get_totalAmount(self):
+        return self._totalAmount
+    
+    def set_dateIssued(self, dateIssued):
+        self._dateIssued = dateIssued
+    
+    def get_dateIssued(self):
+        return self._dateIssued
+    
+    def set_paymentMethod(self, paymentMethod):
+        self._paymentMethod = paymentMethod
+    
+    def get_paymentMethod(self):
+        return self._paymentMethod
+
+    # Other required function-headers
+    def generate_receipt(self):
+        """This function should show the receipt details."""
+        pass
+
+    def print_receipt(self):
+        """This function should handle printing the receipt if the user needed it."""
+        pass
+
