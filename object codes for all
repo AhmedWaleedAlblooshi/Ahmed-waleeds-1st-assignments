@@ -1,0 +1,39 @@
+# Creating objects for each of the classes I did above
+
+# creating User object
+user = User(1, "Ted", "Vera", "tedvera@mac.com", "505-661-1110")
+
+# creating Hotel object
+hotel = Hotel("Comfort Inn & Suites Los Alamos", "2455 Trinity Drive, Los Alamos, NM 87544", "505-661-1110", 4.5, 20)
+
+# creating Room object
+room = Room("105", "2 Queen Beds", 89.95, True, "Queen")
+
+# creating Reservation object
+reservation = Reservation("52523887", "Sun, Aug 22, 2010 - 03:00 PM", "Tue, Aug 24, 2010 - 12:00 PM", 201.48, 1)
+
+# creating Payment object
+payment = Payment("111342", "Mastercard (ending in 9904)", 201.48, "22-08-2010", "9904")
+
+# Displaying the information given in figure 1
+
+print("Your Reservation Is Confirmed")
+print(f"Thank you for your reservation. Please print your hotel receipt and show it at check-in.")
+print(f"Your Name: {user.get_firstName()} {user.get_lastName()}")
+print(f"Your Email: {user.get_email()}")
+print(f"Hotel Confirmation Number: {reservation._reservationID}\n")
+
+print(f"{hotel.get_hotelName()}")
+print(f"{hotel.get_address()}")
+print(f"Check-In: {reservation.get_checkInDate()}")
+print(f"Check-Out: {reservation.get_checkOutDate()}")
+print(f"Room: {room._roomNumber}, {room.get_roomType()}")
+print(f"Room Type: {room.get_roomType()}\n")
+
+print("Summary of Charges")
+print(f"Billing Name: {user.get_firstName()} {user.get_lastName()}")
+print(f"Credit Card: {payment.get_paymentMethod()}")
+print(f"Room Cost (per night): ${room.get_pricePerNight()}")
+print(f"Room Subtotal (2 nights): ${room.get_pricePerNight() * 2:.2f}")
+print(f"Taxes and Fees: ${payment.get_amount() - (room.get_pricePerNight() * 2):.2f}")
+print(f"Total Charges: ${payment.get_amount():.2f}")
