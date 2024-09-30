@@ -1,0 +1,49 @@
+class Hotel:
+    """This class represents the Hotel that the user chose to stay in"""
+    
+    def __init__(self, hotelName, address, phone, rating, roomsAvailable):
+        self._hotelName = hotelName
+        self._address = address
+        self._phone = phone
+        self._rating = rating
+        self._roomsAvailable = roomsAvailable
+
+    # Setters and Getters for the attributeses
+    def set_hotelName(self, hotelName):
+        self._hotelName = hotelName
+    
+    def get_hotelName(self):
+        return self._hotelName
+    
+    def set_address(self, address):
+        self._address = address
+    
+    def get_address(self):
+        return self._address
+    
+    def set_phone(self, phone):
+        self._phone = phone
+    
+    def get_phone(self):
+        return self._phone
+    
+    def set_rating(self, rating):
+        self._rating = rating
+    
+    def get_rating(self):
+        return self._rating
+    
+    def set_roomsAvailable(self, roomsAvailable):
+        self._roomsAvailable = roomsAvailable
+    
+    def get_roomsAvailable(self):
+        return self._roomsAvailable
+
+    # Other required function-headers
+    def check_availability(self):
+        """This function should check if the rooms are available."""
+        pass
+
+    def get_hotel_info(self):
+        """This function should return a summary of the hotel's information like reviews."""
+        pass
