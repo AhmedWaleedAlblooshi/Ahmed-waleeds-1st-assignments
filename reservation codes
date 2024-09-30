@@ -1,0 +1,49 @@
+class Reservation:
+    """This class represents the reservation of the user"""
+    
+    def __init__(self, reservationID, checkInDate, checkOutDate, totalPrice, room):
+        self._reservationID = reservationID
+        self._checkInDate = checkInDate
+        self._checkOutDate = checkOutDate
+        self._totalPrice = totalPrice
+        self._room = room
+
+    # Setters and Getters for the reservation attributes
+    def set_reservationID(self, reservationID):
+        self._reservationID = reservationID
+    
+    def get_reservationID(self):
+        return self._reservationID
+    
+    def set_checkInDate(self, checkInDate):
+        self._checkInDate = checkInDate
+    
+    def get_checkInDate(self):
+        return self._checkInDate
+    
+    def set_checkOutDate(self, checkOutDate):
+        self._checkOutDate = checkOutDate
+    
+    def get_checkOutDate(self):
+        return self._checkOutDate
+    
+    def set_totalPrice(self, totalPrice):
+        self._totalPrice = totalPrice
+    
+    def get_totalPrice(self):
+        return self._totalPrice
+    
+    def set_room(self, room):
+        self._room = room
+    
+    def get_room(self):
+        return self._room
+
+    # Other required function-headers
+    def cancel_reservation(self):
+        """This function will cancel the reservation."""
+        pass
+
+    def modify_reservation(self, new_checkInDate, new_checkOutDate):
+        """This function will modify the reservation check-in and check-out dates."""
+        pass
